@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        body {
+            background-color: rgb(60, 60, 60);
+            text-align: center;
+            display: block;
+            color:white;
+        }
+        #container {
+            display: inline-block;
+            min-width: 40%;
+            margin-left: 30%;
+            margin-right: 30%;
+            padding: 16px;
+        }
+        header {
+            display: block;
+            height: 30%;
+            margin-bottom: 30%;
+        }
+        a.head {
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        a.head:hover {
+            font-style: oblique;
+        }
+        a.foot {
+            color:white;
+        }
+        a.foot:hover {
+            text-decoration: underline;
+        }
+        #empty {
+            background-color: aqua;
+            position: absolute;
+        }
+        main {
+            padding:24px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        #info {
+            display: inline;
+            width:100px;
+            height: 70px;
+            background-color: white;
+            color: rgb(60, 60, 60);
+            cursor: pointer;
+            line-height: 2;
+            border-radius: 5px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 30%;
+            color:lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a class="head" style="float: left">Cover</a>
+            <a class="head" style="float: right">Contact</a>
+            <a class="head" style="float: right">Feature</a>
+            <a class="head" style="float: right">Home</a>
+        </header>
+        <main>
+            <h1>Cover your page.</h1>
+            <p>Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <div id="info">Learn More</div>
+        </main>
+        <footer>
+            Cover template for <a class="foot">Bootstrap</a>, by <a class="foot">@mdo.</a>
+        </footer>
+    </div>
+</body>
+</html>

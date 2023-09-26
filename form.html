@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Survey</h1>
+    <fieldset>
+    <legend>기본 정보</legend>
+    <form name="basic" method="get">
+        <b>이름</b><br>
+        <input type="text"><br>
+
+        <br><b>학년</b><br>
+        <input type="radio" id="grade" name="grade" value="1" checked>1학년<br>
+        <input type="radio" id="grade" name="grade" value="2">2학년<br>
+        <input type="radio" id="grade" name="grade" value="3">3학년<br>
+        <input type="radio" id="grade" name="grade" value="4">4학년<br>
+
+        <br><b>학부</b><br>
+        <input type="checkbox" id="department" name="department" value="GLS" checked>글로벌리더십학부<br>
+        <input type="checkbox" id="department" name="department" value="IL">국제어문학부<br>
+        <input type="checkbox" id="department" name="department" value="ME">경영경제학부<br>
+        <input type="checkbox" id="department" name="department" value="LAW">법학부<br>
+        <input type="checkbox" id="department" name="department" value="CA">커뮤니케이션학부<br>
+        <input type="checkbox" id="department" name="department" value="SE">공간환경시스템공학부<br>
+        <input type="checkbox" id="department" name="department" value="MCE">기계제어공학부<br>
+        <input type="checkbox" id="department" name="department" value="CCD">콘텐츠융합디자인학부<br>
+        <input type="checkbox" id="department" name="department" value="LS">생명과학부<br>
+        <input type="checkbox" id="department" name="department" value="CSEE">전산전자학부<br>
+        <input type="checkbox" id="department" name="department" value="CPSW">상담심리사회복지학부<br>
+        <input type="checkbox" id="department" name="department" value="ICT">ICT창업학부<br>
+        <input type="checkbox" id="department" name="department" value="CCE">창의융합교육원<br>
+        <input type="checkbox" id="department" name="department" value="AI">AI융합교육원<br>
+        <input type="checkbox" id="department" name="department" value="CF">신앙교육원<br>
+    </form>
+    </fieldset>
+    <fieldset>
+    <legend>세부 정보</legend>
+    <form name="detail" method="get">
+        <b>예약장소</b><br>
+        <select name="place">
+            <optgroup label="NTH">
+                <option value="1">NTH310</option>
+                <option value="2">NTH311</option>
+                <option value="3">NTH313</option>
+                <option value="4">NTH413</option>
+                <option value="5">NTH414</option>
+            </optgroup>
+            <optgroup label="HDH">
+                <option value="11">HDH318A</option>
+                <option value="12">HDH318B</option>
+                <option value="13">HDH418A</option>
+                <option value="14">HDH418B</option>
+            </optgroup>
+        </select>
+
+        <br><b>예약날짜</b><br>
+        <input type="date" min="2019-01-01" max="2023-12-31" name="reservedate">
+
+        <br><b>대여이유</b><br>
+        <textarea name="reason" cols="40" rows="5"></textarea>
+    </form>
+    </fieldset>
+    <br>
+    <form name="submit" method="get">
+        <input type="button" value="제출하기">
+    </form>
+</body>
+</html>
+
+<!-- 필수 : text, radio, checkbox, select, date, textarea
+선택 : fieldset, legend, optgroup, color, datalis -->

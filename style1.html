@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style 1</title>
+    <style>
+        body {
+            font: 100% Lucia Sans, Verdana;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+        #container {
+            display:block;
+            width: 97%;
+            margin: 20px;
+            margin-right: 20px;
+        }
+        #top {
+            display:block;
+            background-color:seagreen;
+            color:white;
+            border-radius: 3px;
+            padding: 4px;
+        }
+        #wrapper {
+            position:relative;
+            overflow: auto;
+        }
+        #menubar {
+            width: 200px;
+            float: left;
+        }
+        #main {
+            min-width: 200px;
+            padding:10px;
+            margin: 0 210px;
+        }
+        #sidebar {
+            width: 200px;
+            position: absolute;
+            margin-top: 10px;
+            margin-left:10px;
+            padding: 10px;
+            background-color: lightskyblue;
+            color: white;
+            line-height: 30px;
+            bottom:0;
+            top:0;
+            right:0;
+        }
+        .manulist {
+            background-color:aliceblue;
+            padding: 5px;
+        }
+        li {
+            border: 1px solid lightgray;
+            border-radius: 3px;
+            margin: 5px;
+        }
+        .manulist:hover{
+            background-color: white;
+        }
+        .manulist:nth-child(1) {
+            background-color: #04AA6D;
+            color: white;
+        }
+        #footer{
+            display: block;
+            background-color: lightgrey;
+            border: 1px solid darkgray;
+            border-radius: 3px;
+            font-size: 11px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        a:link, a:visited {
+            color:black;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <h2>Welcome to JungEunchong's Homepage (21900673)</h2>
+            <p>Use the menu to select different Stylesheets</p>
+        </div>
+        <div id="wrapper">
+            <div id="menubar">
+                <ul>
+                    <li class="manulist" onclick="location.href='style1.html'">Stylesheet1</li>
+                    <li class="manulist" onclick="location.href='style2.html'">Stylesheet2</li>
+                    <li class="manulist">Stylesheet3</li>
+                    <li class="manulist">Stylesheet4</li>
+                    <li class="manulist" onclick="location.href='nostyle.html'">No Stylesheet</li>
+                </ul>
+            </div>
+            <div id="main">
+                <h2>Same Page Different Stylesheets</h2>
+                <p>
+                    This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+                    <a class="link" href="style1.html">Stylesheet1</a>,
+                    <a class="link" href="style2.html">Stylesheet2</a>,
+                    <a class="link" href="">Stylesheet3</a>,
+                    <a class="link" href="">Stylesheet4</a>.
+                </p>
+                <h3>No Styles</h3>
+                <p>
+                    This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+                    <br><a href="nostyle.html">No Stylesheet</a>.
+                </p>
+            </div>
+            <div id="sidebar">
+                <h4>Side-Bar</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </div>
+    </div>
+</body>
+</html>
